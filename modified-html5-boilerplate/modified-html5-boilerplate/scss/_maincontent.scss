@@ -1,0 +1,56 @@
+.maincontent{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+
+}
+
+.voice-assistance {
+
+	display: grid;
+
+	grid-template-columns: 1fr 1fr;
+
+	.text{
+		grid-column: 1;
+	}
+	figure{
+		grid-column: 2;
+	}
+}
+.bluetooth {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr;
+
+	.text{
+		grid-column: 2;
+	}
+	figure{
+		grid-column: 1;
+	}
+}
+	.powerful-sound {
+
+	display: grid;
+
+	grid-template-columns: 1fr 1fr;
+	.text{
+		grid-column: 1;
+	}
+	figure{
+		grid-column: 2;
+	}
+}
+	.aux {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr;
+
+	.text{
+		grid-column: 2;
+	}
+	figure{
+		grid-column: 1;
+	}	
+}

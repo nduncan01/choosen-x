@@ -1,0 +1,25 @@
+.subheader {
+	padding: 2rem;
+	background-color: #BEC0C0;
+}
+	
+.menu{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-size: 2rem;
+
+	li{
+		text-align: center;
+	}
+}
+.voice-assistance1{
+	grid-column: 2 / span 2;
+}
+
+.logo{
+	grid-column: 1;
+}
+
