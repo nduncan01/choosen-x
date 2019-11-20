@@ -4,7 +4,11 @@ header {
 
 /*# sourceMappingURL=main.css.map */
 footer {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #000000;
+  background-color: #BEC0C0;
+  padding: 1rem; }
 
 h1 {
   font-family: 'Tomorrow', sans-serif;
@@ -13,18 +17,20 @@ h1 {
 
 h2 {
   font-family: 'Tomorrow', sans-serif;
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #ffffff; }
 
 p {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  color: #ffffff; }
 
 .menu a {
   font-family: 'Tomorrow', sans-serif;
   color: #000000; }
 
 .subheader {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #BEC0C0; }
 
 .menu {
@@ -41,7 +47,9 @@ p {
   grid-column: 2 / span 2; }
 
 .logo {
-  grid-column: 1; }
+  display: grid;
+  grid-column: 1;
+  width: 10%; }
 
 .story {
   display: grid;
@@ -55,6 +63,8 @@ p {
     padding: 4rem;
     align-self: end;
     line-height: 2rem; }
+    .story .text p {
+      color: #000000; }
   .story img {
     grid-column: 1 / span 3;
     grid-row: 1;
@@ -63,7 +73,14 @@ p {
     grid-column: 1;
     grid-row: 1;
     align-self: end;
-    z-index: 1; }
+    z-index: 1;
+    width: 30%;
+    color: #BEC0C0;
+    font-family: 'Tomorrow', sans-serif; }
+  .story .alert-button {
+    color: #000000;
+    font-size: 2rem;
+    grid-column: 1 / span 2; }
   .story h2 {
     grid-column: 2;
     grid-row: 1;
@@ -74,9 +91,20 @@ p {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr); }
 
+main {
+  background-image: url("../img/steve-johnson.jpg");
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-right: 3rem;
+  padding-left: 3rem; }
+
+p {
+  line-height: 3rem; }
+
 .voice-assistance {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10rem; }
   .voice-assistance .text {
     grid-column: 1; }
   .voice-assistance figure {
@@ -84,32 +112,66 @@ p {
 
 .bluetooth {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10rem; }
   .bluetooth .text {
     grid-column: 2; }
   .bluetooth figure {
-    grid-column: 1; }
+    grid-column: 1;
+    grid-row: 1; }
 
 .powerful-sound {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10rem; }
   .powerful-sound .text {
     grid-column: 1; }
   .powerful-sound figure {
-    grid-column: 2; }
+    grid-column: 2;
+    grid-row: 1; }
 
 .aux {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 10rem; }
   .aux .text {
     grid-column: 2; }
   .aux figure {
-    grid-column: 1; }
+    grid-column: 1;
+    grid-row: 1; }
+  .aux .purchase p {
+    grid-column: 1 / span 4;
+    font-size: 2rem; }
 
 .faq {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: center;
+  justify-content: center;
+  padding-left: 10rem; }
+  .faq .questions h2 {
+    grid-columns: 1;
+    color: #000000; }
+  .faq .questions p {
+    grid-columns: 2 / span 1;
+    color: #000000; }
 
 .signup {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-row: 1fr, 1fr;
+  background-color: #BEC0C0; }
+  .signup .text {
+    grid-columns: 1;
+    color: #000000;
+    padding-left: 10rem; }
+    .signup .text p {
+      color: #000000; }
+  .signup .form {
+    grid-columns: 2 / span 3;
+    align-self: center;
+    padding-left: 10rem; }
+  .signup label {
+    font-family: 'Tomorrow', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

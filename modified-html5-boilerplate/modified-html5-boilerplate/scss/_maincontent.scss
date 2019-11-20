@@ -4,12 +4,24 @@
 	grid-template-rows: repeat(3, 1fr);
 
 }
+main{
+	background-image: url('../img/steve-johnson.jpg');
+	padding-top: 6rem;
+	padding-bottom:6rem;
+	padding-right:3rem;
+	padding-left:3rem;
 
+	
+}
+p{
+	line-height: 3rem;
+}
 .voice-assistance {
 
 	display: grid;
 
 	grid-template-columns: 1fr 1fr;
+	padding-bottom:10rem;
 
 	.text{
 		grid-column: 1;
@@ -22,12 +34,14 @@
 	display: grid;
 
 	grid-template-columns: 1fr 1fr;
+	padding-bottom:10rem;
 
 	.text{
 		grid-column: 2;
 	}
 	figure{
 		grid-column: 1;
+		grid-row: 1;
 	}
 }
 	.powerful-sound {
@@ -35,22 +49,32 @@
 	display: grid;
 
 	grid-template-columns: 1fr 1fr;
+	padding-bottom:10rem;
 	.text{
 		grid-column: 1;
 	}
 	figure{
 		grid-column: 2;
+		grid-row: 1;
 	}
 }
 	.aux {
 	display: grid;
 
 	grid-template-columns: 1fr 1fr;
+	padding-bottom:10rem;
 
 	.text{
 		grid-column: 2;
 	}
 	figure{
 		grid-column: 1;
+		grid-row: 1;
 	}	
+	.purchase{
+		p{
+			grid-column: 1 / span 4;
+			font-size: 2rem;
+		}
+	}
 }

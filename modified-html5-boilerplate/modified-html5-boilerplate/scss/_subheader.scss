@@ -1,5 +1,5 @@
 .subheader {
-	padding: 2rem;
+	padding: 1.5rem;
 	background-color: #BEC0C0;
 }
 	
@@ -20,6 +20,9 @@
 }
 
 .logo{
+	display: grid;
 	grid-column: 1;
+	width: 10%;
+
 }
 

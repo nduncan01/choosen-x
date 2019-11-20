@@ -1,3 +1,22 @@
 .faq{
 	display: grid;
+	grid-template-columns: 1fr;
+	align-self: center;
+	justify-content: center;
+	padding-left: 10rem;
+	
+
+.questions{
+
+	h2{
+		grid-columns: 1;
+		
+		color: #000000;
+	}
+	p{
+		grid-columns:2 / span 1;
+		color: #000000;
+	}
+}
+
 }
